@@ -1,0 +1,4 @@
+name: McRankingsAPI
+version: 1.0
+author: hthoene
+main: de.hthoene.mcrankingsapi.McRankingsAPI
