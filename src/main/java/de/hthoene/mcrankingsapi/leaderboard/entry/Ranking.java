@@ -4,9 +4,9 @@ import java.util.UUID;
 
 public class Ranking {
 
-    private int index;
-    private String username;
-    private UUID uuid;
+    private final int index;
+    private final String username;
+    private final UUID uuid;
 
     public Ranking(int index, String username, UUID uuid) {
         this.index = index;
