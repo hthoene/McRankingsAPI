@@ -1,12 +1,8 @@
 package de.hthoene.mcrankingsapi;
 
 import de.hthoene.mcrankingsapi.leaderboard.LeaderboardConnection;
-import de.hthoene.mcrankingsapi.leaderboard.LeaderboardResult;
-import de.hthoene.mcrankingsapi.leaderboard.McRankingsConfig;
-import de.hthoene.mcrankingsapi.leaderboard.Ranking;
+import de.hthoene.mcrankingsapi.config.McRankingsConfig;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.util.List;
 
 public class McRankingsAPI extends JavaPlugin {
 

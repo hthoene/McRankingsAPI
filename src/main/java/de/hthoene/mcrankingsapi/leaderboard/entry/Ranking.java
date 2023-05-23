@@ -1,4 +1,4 @@
-package de.hthoene.mcrankingsapi.leaderboard;
+package de.hthoene.mcrankingsapi.leaderboard.entry;
 
 import java.util.UUID;
 

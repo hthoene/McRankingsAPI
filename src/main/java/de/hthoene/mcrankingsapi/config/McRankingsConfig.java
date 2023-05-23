@@ -1,4 +1,4 @@
-package de.hthoene.mcrankingsapi.leaderboard;
+package de.hthoene.mcrankingsapi.config;
 
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.YamlConfiguration;
