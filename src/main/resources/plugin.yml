@@ -1,5 +1,5 @@
 name: McRankingsAPI
-version: 1.0
+version: 1.0.0-alpha
 author: hthoene
 website: mc-rankings.com
 main: de.hthoene.mcrankingsapi.McRankingsAPI
