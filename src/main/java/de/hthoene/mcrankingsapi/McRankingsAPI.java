@@ -18,4 +18,7 @@ public class McRankingsAPI extends JavaPlugin {
         return new LeaderboardConnection(pluginName, leaderboardId, this, serverName);
     }
 
+    public String getServerName() {
+        return serverName;
+    }
 }

@@ -1,7 +1,6 @@
 package de.hthoene.mcrankingsapi.leaderboard;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 import com.google.gson.JsonSyntaxException;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -19,11 +18,7 @@ public class LeaderboardPage {
 
     public LeaderboardPage(JavaPlugin javaPlugin, String pluginName, int leaderboardId, int page, int pageSize,String serverName, LeaderboardResult result) {
         this.javaPlugin = javaPlugin;
-
         String url = "leaderboard/get/" + serverName + "/" + pluginName + "/" + leaderboardId + "?page=" + page + "&size=" + pageSize;
-
-        System.out.println("request to: " + API_URL + url);
-
         sendRequest(url, result);
     }
 
@@ -52,9 +47,6 @@ public class LeaderboardPage {
 
                         reader.close();
 
-                        System.out.println("Response: ");
-                        System.out.println(response);
-
                         try {
                             Gson gson = new Gson();
                             LeaderboardResponse leaderboardResponse = gson.fromJson(response.toString(), LeaderboardResponse.class);
@@ -67,14 +59,14 @@ public class LeaderboardPage {
                     }
 
                 } catch (IOException e) {
-                    log(Level.WARNING, e.getMessage());
+                    log(e.getMessage());
                 }
             }
         });
     }
 
-    private void log(Level level, String message) {
-        javaPlugin.getLogger().log(level, message);
+    private void log(String message) {
+        javaPlugin.getLogger().log(Level.WARNING, message);
     }
 
 }
